@@ -1,6 +1,16 @@
-import { defineDb } from 'astro:db';
+import { defineDb } from "astro:db";
+import {
+  MemoryGames,
+  MemorySessions,
+  MemoryRounds,
+  MemoryPerformance,
+} from "./tables";
 
-// https://astro.build/db/config
 export default defineDb({
-  tables: {}
+  tables: {
+    MemoryGames,
+    MemorySessions,
+    MemoryRounds,
+    MemoryPerformance,
+  },
 });
